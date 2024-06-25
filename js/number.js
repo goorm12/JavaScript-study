@@ -14,7 +14,12 @@ console.log(Math.ceil(num2)); // 10
 
 // Math.round()
 // 소수점 첫째 자리에서 반올림
-
 let num3 = 4.31;
 
 console.log(Math.round(num3));
+
+// Math.trunc()
+// 소수부를 무시.
+let num4 = 2.3;
+
+console.log(Math.trunc(num4));
