@@ -13,18 +13,13 @@
   border-radius: 5rem;
 }
 
-.buttonBox__text {
-  text-align: center;
-}
-
 .buttonBox__title {
-  margin-bottom: 3rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .buttonBox__sub-title {
-  font-size: 2.2rem;
+  font-size: 8rem;
 }
 
 .buttonBox__button {
