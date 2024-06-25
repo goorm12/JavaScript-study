@@ -11,3 +11,10 @@ console.log(Math.floor(num)); // 4
 let num2 = 9.312;
 
 console.log(Math.ceil(num2)); // 10
+
+// Math.round()
+// 소수점 첫째 자리에서 반올림
+
+let num3 = 4.31;
+
+console.log(Math.round(num3));
