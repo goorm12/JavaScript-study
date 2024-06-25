@@ -38,3 +38,12 @@ console.log(Math.min(1, 4, -19)); // -19
 // Math.pow(n, power)
 // n을 power번 거듭제곱한 값을 반환한다.
 console.log(Math.pow(2, 3)); // 8
+
+// paresInt 와 parseFloat
+// 두 함수는 불가능할 때까지 문자열에서 숫자를 '읽습니다'. 숫자를 읽는 도중 오류가 발생하면 이미 수집된 숫자를 반환한다.
+
+console.log(parseInt("100px")); // 100
+console.log(parseInt("98.82")); // 98, 정수 부분만 반환된다.(소수점을 버린다.)
+
+console.log(parseFloat("29.89em")); // 29.89
+console.log(parseFloat("12.3.4")); // 12.3, 두 번째 점에서 숫자 읽기를 멈춘다.
