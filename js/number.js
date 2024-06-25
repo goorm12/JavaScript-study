@@ -47,3 +47,8 @@ console.log(parseInt("98.82")); // 98, 정수 부분만 반환된다.(소수점�
 
 console.log(parseFloat("29.89em")); // 29.89
 console.log(parseFloat("12.3.4")); // 12.3, 두 번째 점에서 숫자 읽기를 멈춘다.
+
+// random, floor함수를 이용하여 1부터 10랜덤 숫자 뽑아보기
+let randomNumber = Math.floor(Math.random() * 10 + 1);
+
+console.log(randomNumber);
