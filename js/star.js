@@ -25,7 +25,7 @@ console.log(star2);
 
 // 직각 삼각형 2
 for (let i = 0; i < lineCount; i++) {
-  for (let j = 0; j <= lineCount - i; j++) {
+  for (let j = 0; j < lineCount - i; j++) {
     star3 += "*";
   }
   star3 += "\n";
