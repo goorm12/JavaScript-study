@@ -58,3 +58,13 @@ let slice = ["t", "e", "s", "t"];
 
 console.log(slice.slice(1, 3)); // "e","s" 인덱스가 3인 요소는 제외
 console.log(slice.slice(-2)); // "s", "t" 인덱스가 -2인 요소부터 제일 끝 요소까지 복사
+
+// forEach: 주어진 함수를 배열 요소 각각에 대해 실행할 수 있다.
+let user = ["kim", "kevin", "kane"];
+
+user.forEach((item, index, array) => {
+  console.log(`${item} is at index ${index} in ${array}`);
+  // kim is at index 0 in kim,kevin,kane
+  // kevin is at index 1 in kim,kevin,kane
+  // kane is at index 2 in kim,kevin,kane
+});
