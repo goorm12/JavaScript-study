@@ -68,3 +68,26 @@ user.forEach((item, index, array) => {
   // kevin is at index 1 in kim,kevin,kane
   // kane is at index 2 in kim,kevin,kane
 });
+
+// 배열 탐색하기
+// indexOf, lastIndexOf, includes
+
+let arr = [1, 0, false];
+
+console.log(arr.indexOf(0)); // 1
+console.log(arr.indexOf(false)); // 2
+console.log(arr.indexOf(null)); // -1
+
+console.log(arr.includes(1)); // true
+
+// find와 findIndex
+
+let users = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Pete" },
+  { id: 3, name: "Mary" },
+];
+
+let user2 = users.find((item) => item.id == 1);
+
+alert(user2.name); // John
