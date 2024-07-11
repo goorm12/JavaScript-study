@@ -49,3 +49,21 @@ const userWithEmail = users.filter((user) => user.email);
 console.log(userWithEmail);
 const userWithPhone = users.filter((user) => user.phone);
 console.log(userWithPhone);
+
+// .find() : 배열에서 콜백 테스트를 처음으로 통과하는 요소를 반환합니다.
+// 만약 테스트가 통과하면, 이후 테스트는 진행하지 않습니다.
+// 만약 모든 테스트가 실패하면, 'undefined'를 반환합니다.
+// 하나의 값만 찾습니다.
+const numbers3 = [18, 12, 60, 160, 189];
+const foundNumber = numbers3.find((number) => number === 189);
+
+console.log(foundNumber);
+
+const users2 = [
+  { name: "Neo", age: 12, email: "neo@github.dev" },
+  { name: "Dias", age: 27, email: "dias@github.dev" },
+  { name: "Ake", age: 39 },
+];
+
+const foundUser = users2.find((user) => !user.email);
+console.log(foundUser);
