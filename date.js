@@ -3,8 +3,8 @@ let date = new Date();
 console.log(date);
 
 // 2024년 12월 19일 12시 12분 19초
-// date = new Date(2024, 12, 19, 12, 19);
-// console.log(date);
+date = new Date(2024, 11, 19, 12, 19, 31);
+console.log(date);
 
 // 타임스탬프에서 각 정보를 얻을 수 있습니다.
 console.log(date.getFullYear());
