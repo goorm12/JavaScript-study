@@ -34,3 +34,25 @@ function getDayKo(day) {
       return "토요일";
   }
 }
+
+// getTime() : 유닉스 타임(UNIX Time)으로부터 경과한 시간(ms)을 반환합니다.
+// Date.now() : 현재 시간을 유닉스 타임으로 반환합니다.
+// 유닉스 타임이란, 1970.01.01 00:00:00 시간을 의미합니다.
+// 차이점 : Date.now()는 예전 시간을 출력할 수 없고 딱 현재 시점만 가능, new Date(2000, 12, 19)로 예전 날짜를 기준으로도 시간을 알 수 있다.
+const date1 = new Date();
+const date2 = Date.now();
+
+console.log(date1);
+console.log(date1.getTime());
+console.log(date2);
+
+// setTimeout(() => {
+//   console.log(Date.now(), date2);
+//   console.log(Date.now() - date2);
+// }, 1000);
+
+// 날짜 인스턴스의 협정 세계시(UTC)를 'ISO 8601' 포맷으로 반환합니다.
+// 'ISO 860'는 날짜와 시간을 표현하는 국제 표준 규격입니다.
+// node.js 환경에서는 국제 표준 규격으로 된다....
+console.log(new Date()); // 한국 표준시
+console.log(new Date().toISOString()); // 국제 표준 규격
