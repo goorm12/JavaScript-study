@@ -28,11 +28,24 @@ const numbers = [198, 120, 19, 7, 188];
 const isValid = numbers.every((item) => item < 200);
 console.log(isValid);
 
-const user = [
+const users = [
   { name: "Neo", age: 12, email: "neo@github.dev" },
   { name: "Dias", age: 27, email: "dias@github.dev" },
-  { name: "Ake", age: 29 },
+  { name: "Ake", age: 39 },
 ];
 
-console.log(user.every((user) => user.email));
-console.log(user.every((user) => user.age));
+console.log(users.every((user) => user.email));
+console.log(users.every((user) => user.age));
+
+// .filter() : 배열에서 콜백 테스트를 통과하는 모든 요소로 새로운 배열을 만들어 반환합니다.
+// 만약 모든 요소가 테스트를 통과하지 못하면 빈 배열을 반환합니다.
+const numbers2 = [17, 29, 30, 100, 129];
+const filteredNumbers = numbers.filter((number) => number < 30);
+console.log(filteredNumbers);
+
+const youngUser = users.filter((user) => user.age < 30);
+console.log(youngUser);
+const userWithEmail = users.filter((user) => user.email);
+console.log(userWithEmail);
+const userWithPhone = users.filter((user) => user.phone);
+console.log(userWithPhone);
